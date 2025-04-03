@@ -1,0 +1,91 @@
+.color-switch {
+  position: fixed;
+  right: 0;
+  top: 60px;
+  padding: 15px;
+  width: 200px;
+  border: 1px solid var(--bg-black-50);
+  background-color: var(--bg-black-100);
+  z-index: 1000;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  translate: 100% 0;
+}
+
+.color-switch.active {
+  translate: 0;
+}
+
+.color-switch .s-icon {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  font-size: 20px;
+  background-color: var(--bg-black-100);
+  color: var(--text-black-900);
+  right: 100%;
+  border: 1px solid var(--bg-black-50);
+  margin-right: 25px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggler {
+  top: 2px;
+}
+
+.day-night {
+  bottom: 2px;
+}
+
+.color-switch h4 {
+  margin: 0 0 10px;
+  color: var(--text-black-700);
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.color-switch .colors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.color-switch .colors span {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  /* border: 1px solid red; */
+}
+
+.color-1 {
+  background-color: #ec1839;
+  cursor: pointer;
+}
+
+.color-2 {
+  background-color: #fa5b0f;
+  cursor: pointer;
+}
+
+.color-3 {
+  background-color: #37b182;
+  cursor: pointer;
+}
+
+.color-4 {
+  background-color: #1854b4;
+  cursor: pointer;
+}
+
+.color-5 {
+  background-color: #f021b2;
+  cursor: pointer;
+}
